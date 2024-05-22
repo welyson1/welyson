@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Lorenzo Uriel</title>
   <subtitle>Eu escrevo sobre o que estudo.</subtitle>
-  <updated>2024-05-20T17:46:08-03:00</updated>
+  <updated>2024-05-22T13:25:30-03:00</updated>
   <author>
     <name>Lorenzo Uriel - Cylogus</name>
     <uri>http://localhost:4000/</uri>
@@ -20,11 +20,42 @@
 
   
   <entry>
+    <title>Monitoria e Observabilidade com Prometheus e Grafana</title>
+    <link href="http://localhost:4000/posts/observability-prometheus-grafana/" rel="alternate" type="text/html" title="Monitoria e Observabilidade com Prometheus e Grafana" />
+    <published>2024-05-22T00:00:00-03:00</published>
+  
+    <updated>2024-05-22T13:18:11-03:00</updated>
+  
+    <id>http://localhost:4000/posts/observability-prometheus-grafana/</id>
+    <content src="http://localhost:4000/posts/observability-prometheus-grafana/" />
+    <author>
+      <name>Lorenzo Uriel - Cylogus</name>
+    </author>
+
+  
+    
+    <category term="Observability" />
+    
+  
+
+  <summary>Prometheus
+É uma ferramenta de monitoria, muito utilizado em ambientes dinâmicos, como containers (k8s, swarms, e etc…)
+
+Pode ser utilizado em outros ambientes bare metal, mas o forte dele é em infraestrutura de microserviços e containers.
+
+Você utilizar ele de diversas maneiras:
+
+  Como um http server que salva e expõe as métricas, assim você pode consultar usando outro sistema de observabilid...</summary>
+
+  </entry>
+
+  
+  <entry>
     <title>Como Criar um Blog Como Esse</title>
     <link href="http://localhost:4000/posts/first-post/" rel="alternate" type="text/html" title="Como Criar um Blog Como Esse" />
     <published>2024-01-01T00:00:00-03:00</published>
   
-    <updated>2024-01-01T00:00:00-03:00</updated>
+    <updated>2024-05-22T10:59:46-03:00</updated>
   
     <id>http://localhost:4000/posts/first-post/</id>
     <content src="http://localhost:4000/posts/first-post/" />
@@ -41,12 +72,12 @@
   <summary>Hello World
 Fala, galera!
 
-Lorenzo está de cara nova agora, faz tempo que estava querendo criar um Blog e fiquei impressionado com a facilidade de criação desse Blog.
+Lorenzo está de cara nova agora, faz tempo que estava querendo criar um Blog e fiquei impressionado com a facilidade de criação utilizando essa ferramenta.
 
-Como o intuito desse Blog é espalha conhecimento, vou começar esse post ensinando e documentando como criar um Blog como esse.
+Como o intuito desse Blog é espalhar conhecimento, vou começar esse post ensinando e documentando como você também pode criar um Blog como este.
 
 O Que é o Jekyll?
-Jekyll é um gerador de sites estáticos escrito em Ruby. Ele permite criar sites e b...</summary>
+Jekyll é um gerador de sites estáticos escrito em...</summary>
 
   </entry>
 
