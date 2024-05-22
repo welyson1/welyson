@@ -44,10 +44,13 @@ Existem vários dashboards já pré-configurados que foram disponibilizados pela
 
 - Podemos importar um dashboard para o grafana usando usando o tema.json do repositório acima: [acesse aqui](https://raw.githubusercontent.com/rfrail3/grafana-dashboards/master/prometheus/node-exporter-full.json)
 
+**O que é o Node Exporter?**
+- O Node Exporter é um componente do ecossistema de monitoramento do Prometheus, utilizado para coletar e expor métricas sobre o hardware e o sistema operacional de um nó (servidor) em um formato que pode ser lido pelo Prometheus. Ele é especialmente útil para obter informações detalhadas sobre o desempenho e o estado dos recursos do sistema, como CPU, memória, disco, rede, entre outros.
+
 
 # Subindo um Serviço de Observabilidade e Monitoria com Prometheus e Grafana
 
-Eu adicionei todos os arquivos que utilizei em um repositório no meu GitHub. Você pode clonar e iniciar com os comandos abaixo.
+Eu adicionei todos os arquivos que utilizei em um [repositório](https://github.com/lorenzouriel/observability-prometheus-grafana) no meu GitHub. Você pode clonar e iniciar com os comandos abaixo.
 
 ## Resumo dos Arquivos:
 - **Vagrantfile**: Configuração para criar e provisionar a VM com Vagrant.
@@ -69,7 +72,6 @@ vagrant rsync
 ```
 
 ## Configuração do Node Exporter
-- **Node Exporter:** 
 1. Extraia os arquivos do tar:
 ```sh
 tar -xvf node_exporter-1.3.0.linux-amd64.tar.gz
