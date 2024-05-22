@@ -8,9 +8,9 @@ tags: [blog]
 # Hello World
 Fala, galera! 
 
-Lorenzo está de cara nova agora, faz tempo que estava querendo criar um Blog e fiquei impressionado com a facilidade de criação desse Blog.
+Lorenzo está de cara nova agora, faz tempo que estava querendo criar um Blog e fiquei impressionado com a facilidade de criação utilizando essa ferramenta.
 
-Como o intuito desse Blog é espalha conhecimento, vou começar esse post ensinando e documentando como criar um Blog como esse.
+Como o intuito desse Blog é espalhar conhecimento, vou começar esse post ensinando e documentando como você também pode criar um Blog como este.
 
 # O Que é o Jekyll?
 Jekyll é um gerador de sites estáticos escrito em Ruby. Ele permite criar sites e blogs que são transformados em arquivos HTML estáticos. A principal vantagem do Jekyll é que ele permite desenvolver sites de forma simples, sem a necessidade de um banco de dados ou backend dinâmico. 
@@ -21,28 +21,26 @@ Jekyll é um gerador de sites estáticos escrito em Ruby. Ele permite criar site
 3. **Markdown e Layouts:** Suporte a escrita em Markdown e a utilização de layouts para fácil formatação de conteúdo.
 
 **Porque usar o Jenkyll como motor de blog?**
+- Para responder essa, vou deixar um link explicando alguns motivos: https://aleatorio.dev.br/posts/porque-usar-jenkyl/
 
-Para responder essa, vou deixar um link explicando alguns motivos.
-- https://aleatorio.dev.br/posts/porque-usar-jenkyl/
-
-*Esse blog post foi feito no Jenkyll também*
+*Esse blog post do link foi feito usando Jenkyll também*
 
 # Instalação e Setup
-Seu primeiro passo aqui é clonar é usar o template do GitHub e depois clonar para um repositório próprio: [Link Template GitHub](https://github.com/cotes2020/chirpy-starter)
+Seu primeiro passo aqui é clonar e usar o template disponibilizado no GitHub, primeiro clone no repositório remoto e depois para o repositório local: [Link Template GitHub](https://github.com/cotes2020/chirpy-starter)
 
-Clique em:
+**Clique em:**
 1. Use This Template
 2. Create a New Repository
-3. O nome do repositório precisa ser assim: githubusername.github.io *(O meu é lorenzouriel.github.io)*
+3. O nome do repositório precisa ser assim: USERNAME.github.io *(O meu é lorenzouriel.github.io)*
 4. Clone o seu repositório em uma pasta local
 
-Para iniciar, você precisa instalar o Ruby e o Jekyll na sua máquina, existe um tutorial para isso:[Tutorial](https://jekyllrb.com/docs/installation/)
+Para iniciar, você precisa instalar o Ruby e o Jekyll na sua máquina, existe um tutorial para isso: [Tutorial](https://jekyllrb.com/docs/installation/)
 
 Depois que tiver instalado, você pode rodar os seguintes comandos:
 - `bundle` - Instalar as últimas dependências
 - `bundle exec jekyll s` - Realizar o Build e rodar localmente
 
-Depois que você adicionar o seu post, pode fazer o push para o repositório remoto, por conta do arquivo `pages-deploy.yml` o deploy é realizado automaticamente no seu GitHub pages, você pode acessar ele atráves do nome do repositório que você criou: githubusername.github.io *(O meu é [lorenzouriel.github.io](https://lorenzouriel.github.io/))*
+Depois que você adicionar o seu post, pode fazer o push para o repositório remoto, por conta do arquivo `pages-deploy.yml` o deploy é realizado automaticamente no seu GitHub pages, você pode acessar ele atráves do nome do repositório que você criou: **USERNAME.github.io**
 
 # Criando o Primeiro Post
 Achei legal adicionar esse tópico porque existe uma estrutura padrão para a criação de um Blog no Jenkyll.
@@ -67,7 +65,7 @@ Quando fechar com os `---`, você pode iniciar o seu post em Markdown.
 Depois é só fazer o deploy e acessar.
 
 # Referências
-- Tutorial: https://www.youtube.com/watch?v=m1RYsmOMPLs
-- Instalação: https://jekyllrb.com/docs/installation/windows/
-- Dicas de Customização: https://chirpy.cotes.page/posts/customize-the-favicon/
-- Mais Sobre o Jenkyll: https://jekyllrb.com/
+- [Tutorial](https://www.youtube.com/watch?v=m1RYsmOMPLs)
+- [Instalação](https://jekyllrb.com/docs/installation/windows/)
+- [Dicas de Customização](https://chirpy.cotes.page/posts/customize-the-favicon/)
+- [Mais Sobre o Jenkyll](https://jekyllrb.com/)
