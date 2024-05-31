@@ -52,41 +52,41 @@ Imagine que no seu ambiente você utiliza o SQL Server, Power BI e outras ferram
 
 
 ### Comandos:
-- Vamos imaginar que você quer baixar o Box do windows no seu servidor
+Vamos imaginar que você quer baixar o Box do windows no seu servidor
 ```sh
 vagrant box add gusztavvargadr/windows-server-2019-standard
 ```
 
-- Baixou algumas Boxes? Vamos lista-las
+Baixou algumas Boxes? Vamos lista-las
 ```sh
 vagrant box list
 ```
 
-- Listar opções de comando do vagrant box (Você pode usar o -h para todos os comandos)
+Listar opções de comando do vagrant box (Você pode usar o -h para todos os comandos)
 ```sh
 vagrant box -h (Geral)
 
 vagrant box list -h  (Específico)
 ```
 
-- Quer verificar se existe alguma Box desatualizada no seu servidor?
+Quer verificar se existe alguma Box desatualizada no seu servidor?
 ```sh
 vagrant box outdated (No próprio diretório)
 
 vagrant box outdated -- global (Vai verificar todas que tenho no servidor)
 ```
 
-- Quer remover a que está desatualizada?
+Quer remover a que está desatualizada?
 ```sh
 vagrant box prune (Vai remover todas as desatualizadas)
 ```
 
-- Ou... atualizar as mesmas sem danificar?
+Ou... atualizar as mesmas sem danificar?
 ```sh
 vagrant box update
 ```
 
-- Caso você queira remover apenas uma Box específica.
+Caso você queira remover apenas uma Box específica.
 ```sh
 vagrant box remove vm/name
 ```
@@ -138,32 +138,32 @@ Mas em poucos instantes, sua VM está no ar!
 Vou listar alguns dos comandos principais que você precisa saber para manipular a sua VM no ar.
 
 #### Comandos:
-- Verificar o Status da VM
+Verificar o Status da VM
 ```sh
 vagrant status
 ```
 
-- Desligar a VM
+Desligar a VM
 ```sh
 vagrant halt
 ```
 
-- Subir a VM (Se existir - Liga/Se não - Cria)
+Subir a VM (Se existir - Liga/Se não - Cria)
 ```sh
 vagrant up
 ```
 
-- Suspende a VM
+Suspende a VM
 ```sh
 vagrant suspend
 ```
 
-- Reiniciar a VM
+Reiniciar a VM
 ```sh
 vagrant reload
 ```
 
-- Destruir ou Remover a VM
+Destruir ou Remover a VM
 ```sh
 vagrant destroy (y/n?)
 ```
@@ -179,7 +179,7 @@ Para configurar as redes, nós temos duas opções: **NAT ou BRIDGE.**
 No meu exemplo, eu vou escolher o NAT.
 
 **Exemplos:**
-- Conexão NAT - DHCP.
+Conexão NAT - DHCP.
 ```sh
 Vagrant.configure("2") do |config| 
   config.vm.network "private_network", type: "dhcp" 
@@ -189,7 +189,7 @@ Vagrant.configure("2") do |config|
 end
 ```
 
-- Conexão NAT - IP Fixo
+Conexão NAT - IP Fixo
 ```sh
 Vagrant.configure("2") do |config| 
     config.vm.network "private_network", ip: "192.168.25.10" 
@@ -251,14 +251,14 @@ Isso sem sombra de dúvidas é o que mais amo no Vagrant, você pode rodar Scrip
 
 Nesse exemplo eu vou liberar o Firewall da máquina, você pode fazer de duas maneiras.
 
-- Especificando o comando direto no VagrantFile 
+Especificando o comando direto no VagrantFile 
 ```sh
  config.vm.provision "shell", inline: <<-SHELL
     netsh advfirewall set allprofiles state off
   SHELL
 ```
 
-- Especificando um path para o comando (Ele precisa estar no mesmo diretório do VagrantFile)
+Especificando um path para o comando (Ele precisa estar no mesmo diretório do VagrantFile)
 ```sh
 config.vm.provision "shell", path: "disable_firewall.ps1"
 ```
@@ -304,8 +304,8 @@ Imagine esse cenário agora: Você instalou tudo que era necessário para o ambi
 
 O que podemos fazer? Nós podemos **fechar a NOSSA Box - vamos empacotar a Box em um arquivo .box**
 
-**Exemplo:**
-1. Criando o arquivo .box da nossa VM
+#### Exemplo:
+Criando o arquivo .box da nossa VM
 ```sh
 vagrant package --output article_test.box
 ```
@@ -316,7 +316,7 @@ vagrant package --output article_test.box
 
 Após criar o arquivo .box, **você precisa adicionar ela em sua lista de Boxes.** Igual fizemos no primeiro exemplo, quando puxamos a nossa VM do Vagrant Cloud. Porém, agora vamos buscar localmente!
 
-2. Adicionando a nossa Box na lista de Boxes
+Adicionando a nossa Box na lista de Boxes
 ```sh
 vagrant box add --name article-test article_test.box
 ```

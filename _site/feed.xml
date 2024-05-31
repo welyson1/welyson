@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Lorenzo Uriel</title>
   <subtitle>Eu escrevo sobre o que estudo.</subtitle>
-  <updated>2024-05-31T11:11:54-03:00</updated>
+  <updated>2024-05-31T11:19:13-03:00</updated>
   <author>
     <name>Lorenzo Uriel - Cylogus</name>
     <uri>http://localhost:4000/</uri>
@@ -95,7 +95,7 @@ Você utilizar ele de diversas maneiras:
     <link href="http://localhost:4000/posts/basic-start-vagrant/" rel="alternate" type="text/html" title="Vagrant Descomplicado: Um Guia Prático" />
     <published>2024-05-20T00:00:00-03:00</published>
   
-    <updated>2024-05-20T00:00:00-03:00</updated>
+    <updated>2024-05-31T11:12:28-03:00</updated>
   
     <id>http://localhost:4000/posts/basic-start-vagrant/</id>
     <content src="http://localhost:4000/posts/basic-start-vagrant/" />

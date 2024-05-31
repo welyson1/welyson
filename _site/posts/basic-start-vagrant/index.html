@@ -43,7 +43,7 @@
 <meta property="twitter:title" content="Vagrant Descomplicado: Um Guia Prático" />
 <meta name="twitter:site" content="@lorenzouriel_7" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-20T00:00:00-03:00","datePublished":"2024-05-20T00:00:00-03:00","description":"Vagrant Descomplicado: Um Guia Prático A minha ideia é te ensinar a usar as principais funcionalidades do Vagrant em apenas um artigo, de forma simplificada e rápida. Você vai aprender o que é, para que serve, quais as suas funcionalidades e vai subir uma VM comigo no decorrer do artigo!","headline":"Vagrant Descomplicado: Um Guia Prático","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/basic-start-vagrant/"},"url":"http://localhost:4000/posts/basic-start-vagrant/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-05-31T11:12:28-03:00","datePublished":"2024-05-20T00:00:00-03:00","description":"Vagrant Descomplicado: Um Guia Prático A minha ideia é te ensinar a usar as principais funcionalidades do Vagrant em apenas um artigo, de forma simplificada e rápida. Você vai aprender o que é, para que serve, quais as suas funcionalidades e vai subir uma VM comigo no decorrer do artigo!","headline":"Vagrant Descomplicado: Um Guia Prático","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/basic-start-vagrant/"},"url":"http://localhost:4000/posts/basic-start-vagrant/"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -1127,6 +1127,17 @@
 
       
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+    
 
     
   
@@ -1176,6 +1187,29 @@
 
       <!-- lastmod date -->
       
+        <span>
+          Atualizado
+          <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1717164748"
+  data-df="DD/MM/YYYY"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  31/05/2024
+</time>
+
+        </span>
+      
 
       
 
@@ -1218,7 +1252,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1796 palavras"
+  title="1793 palavras"
 >
   <em>9 min</em> de leitura</span>
 
@@ -1286,66 +1320,62 @@
 </ul>
 
 <h3 id="comandos"><span class="me-2">Comandos:</span><a href="#comandos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
-<ul>
-  <li>Vamos imaginar que você quer baixar o Box do windows no seu servidor
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+<p>Vamos imaginar que você quer baixar o Box do windows no seu servidor</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant box add gusztavvargadr/windows-server-2019-standard
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Baixou algumas Boxes? Vamos lista-las
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Baixou algumas Boxes? Vamos lista-las</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant box list
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Listar opções de comando do vagrant box (Você pode usar o -h para todos os comandos)
-```sh
-vagrant box -h (Geral)</li>
-</ul>
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>vagrant box list -h  (Específico)</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<p>Listar opções de comando do vagrant box (Você pode usar o -h para todos os comandos)</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
-4
-5
-6
-</pre></td><td class="rouge-code"><pre>
-- Quer verificar se existe alguma Box desatualizada no seu servidor?
-```sh
-vagrant box outdated (No próprio diretório)
+</pre></td><td class="rouge-code"><pre>vagrant box <span class="nt">-h</span> <span class="o">(</span>Geral<span class="o">)</span>
 
-vagrant box outdated -- global (Vai verificar todas que tenho no servidor)
+vagrant box list <span class="nt">-h</span>  <span class="o">(</span>Específico<span class="o">)</span>
 </pre></td></tr></tbody></table></code></div></div>
 
-<ul>
-  <li>Quer remover a que está desatualizada?
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+<p>Quer verificar se existe alguma Box desatualizada no seu servidor?</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>vagrant box outdated <span class="o">(</span>No próprio diretório<span class="o">)</span>
+
+vagrant box outdated <span class="nt">--</span> global <span class="o">(</span>Vai verificar todas que tenho no servidor<span class="o">)</span>
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Quer remover a que está desatualizada?</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant box prune <span class="o">(</span>Vai remover todas as desatualizadas<span class="o">)</span>
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Ou… atualizar as mesmas sem danificar?
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Ou… atualizar as mesmas sem danificar?</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant box update
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Caso você queira remover apenas uma Box específica.
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Caso você queira remover apenas uma Box específica.</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant box remove vm/name
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-</ul>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p>Esses são os comandos principais para você utilizar e baixar uma Box, vou deixar o meu cmd como exemplo:</p>
 <ul>
@@ -1415,50 +1445,47 @@ end
 <p>Vou listar alguns dos comandos principais que você precisa saber para manipular a sua VM no ar.</p>
 
 <h4 id="comandos-2"><span class="me-2">Comandos:</span><a href="#comandos-2" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
-<ul>
-  <li>Verificar o Status da VM
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+<p>Verificar o Status da VM</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant status
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Desligar a VM
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Desligar a VM</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant halt
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Subir a VM (Se existir - Liga/Se não - Cria)
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Subir a VM (Se existir - Liga/Se não - Cria)</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant up
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Suspende a VM
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Suspende a VM</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant <span class="nb">suspend</span>
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Reiniciar a VM
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Reiniciar a VM</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant reload
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Destruir ou Remover a VM
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Destruir ou Remover a VM</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant destroy <span class="o">(</span>y/n?<span class="o">)</span>
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-</ul>
+</pre></td></tr></tbody></table></code></div></div>
 
 <h3 id="configurando-redes-hostname-e-liberando-porta-na-vm"><span class="me-2">Configurando Redes, Hostname e Liberando Porta na VM</span><a href="#configurando-redes-hostname-e-liberando-porta-na-vm" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
 
@@ -1475,36 +1502,36 @@ end
 
 <p>No meu exemplo, eu vou escolher o NAT.</p>
 
-<p><strong>Exemplos:</strong></p>
-<ul>
-  <li>
-    <p>Conexão NAT - DHCP.
-```sh
-Vagrant.configure(“2”) do |config| 
-config.vm.network “private_network”, type: “dhcp”</p>
-
-    <p>config.vm.box = “peru/windows-server-2019-standard-x64-eval” # Box utilizada</p>
-  </li>
-</ul>
-
-<p>end</p>
-<div class="language-plaintext highlighter-rouge"><div class="code-header">
-        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+<p><strong>Exemplos:</strong>
+Conexão NAT - DHCP.</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
-7
-8
-</pre></td><td class="rouge-code"><pre>
-- Conexão NAT - IP Fixo
-```sh
-Vagrant.configure("2") do |config| 
-    config.vm.network "private_network", ip: "192.168.25.10" 
+</pre></td><td class="rouge-code"><pre>Vagrant.configure<span class="o">(</span><span class="s2">"2"</span><span class="o">)</span> <span class="k">do</span> |config| 
+  config.vm.network <span class="s2">"private_network"</span>, <span class="nb">type</span>: <span class="s2">"dhcp"</span> 
 
-    config.vm.box = "peru/windows-server-2019-standard-x64-eval" # Box utilizada
+  config.vm.box <span class="o">=</span> <span class="s2">"peru/windows-server-2019-standard-x64-eval"</span> <span class="c"># Box utilizada</span>
+
+end
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Conexão NAT - IP Fixo</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
+        <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre>Vagrant.configure<span class="o">(</span><span class="s2">"2"</span><span class="o">)</span> <span class="k">do</span> |config| 
+    config.vm.network <span class="s2">"private_network"</span>, ip: <span class="s2">"192.168.25.10"</span> 
+
+    config.vm.box <span class="o">=</span> <span class="s2">"peru/windows-server-2019-standard-x64-eval"</span> <span class="c"># Box utilizada</span>
 end
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -1595,26 +1622,23 @@ end
 
 <p>Nesse exemplo eu vou liberar o Firewall da máquina, você pode fazer de duas maneiras.</p>
 
-<ul>
-  <li>Especificando o comando direto no VagrantFile
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+<p>Especificando o comando direto no VagrantFile</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 </pre></td><td class="rouge-code"><pre> config.vm.provision <span class="s2">"shell"</span>, inline: <span class="o">&lt;&lt;-</span><span class="no">SHELL</span><span class="sh">
-  netsh advfirewall set allprofiles state off
-</span><span class="no">SHELL
-</span></pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-  <li>Especificando um path para o comando (Ele precisa estar no mesmo diretório do VagrantFile)
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+    netsh advfirewall set allprofiles state off
+</span><span class="no">  SHELL
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Especificando um path para o comando (Ele precisa estar no mesmo diretório do VagrantFile)</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>config.vm.provision <span class="s2">"shell"</span>, path: <span class="s2">"disable_firewall.ps1"</span>
-</pre></td></tr></tbody></table></code></div>    </div>
-  </li>
-</ul>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p>Quero que <strong>você dê uma pausa aqui e pense…</strong> quantas coisas é possível fazer com essa automatização?</p>
 
@@ -1682,39 +1706,33 @@ end
 
 <p>O que podemos fazer? Nós podemos <strong>fechar a NOSSA Box - vamos empacotar a Box em um arquivo .box</strong></p>
 
-<p><strong>Exemplo:</strong></p>
-<ol>
-  <li>Criando o arquivo .box da nossa VM
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+<h4 id="exemplo"><span class="me-2">Exemplo:</span><a href="#exemplo" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h4>
+<p>Criando o arquivo .box da nossa VM</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant package <span class="nt">--output</span> article_test.box
-</pre></td></tr></tbody></table></code></div>    </div>
-    <ul>
-      <li><strong><code class="language-plaintext highlighter-rouge">vagrant package</code></strong>: é o comando, você pode adicionar o -h para ver as outras opções do mesmo</li>
-      <li><strong><code class="language-plaintext highlighter-rouge">--output</code></strong>: Complemento do comando para exportar a Box</li>
-      <li><strong><code class="language-plaintext highlighter-rouge">article_test.box</code></strong>: Nome dado para a nossa Box</li>
-      <li><a href="/assets/images/2024-05-20-basic-start-vagrant/box_cmd.png" class="popup img-link  shimmer"><img src="/assets/images/2024-05-20-basic-start-vagrant/box_cmd.png" alt="box_cmd" loading="lazy"></a></li>
-    </ul>
-  </li>
-</ol>
+</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">vagrant package</code></strong>: é o comando, você pode adicionar o -h para ver as outras opções do mesmo</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">--output</code></strong>: Complemento do comando para exportar a Box</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">article_test.box</code></strong>: Nome dado para a nossa Box</li>
+  <li><a href="/assets/images/2024-05-20-basic-start-vagrant/box_cmd.png" class="popup img-link  shimmer"><img src="/assets/images/2024-05-20-basic-start-vagrant/box_cmd.png" alt="box_cmd" loading="lazy"></a></li>
+</ul>
 
 <p>Após criar o arquivo .box, <strong>você precisa adicionar ela em sua lista de Boxes.</strong> Igual fizemos no primeiro exemplo, quando puxamos a nossa VM do Vagrant Cloud. Porém, agora vamos buscar localmente!</p>
 
-<ol>
-  <li>Adicionando a nossa Box na lista de Boxes
-    <div class="language-sh highlighter-rouge"><div class="code-header">
+<p>Adicionando a nossa Box na lista de Boxes</p>
+<div class="language-sh highlighter-rouge"><div class="code-header">
         <span data-label-text="Shell"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copiado!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>vagrant box add <span class="nt">--name</span> article-test article_test.box
-</pre></td></tr></tbody></table></code></div>    </div>
-    <ul>
-      <li><strong><code class="language-plaintext highlighter-rouge">vagrant box add</code></strong>: Comando para criar a Box</li>
-      <li><strong><code class="language-plaintext highlighter-rouge">-- name article-test</code></strong>: Nome que você vai dar para a Box</li>
-      <li><strong><code class="language-plaintext highlighter-rouge">article_test.box</code></strong>: Nome que foi dado para o arquivo .Box</li>
-    </ul>
-  </li>
-</ol>
+</pre></td></tr></tbody></table></code></div></div>
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">vagrant box add</code></strong>: Comando para criar a Box</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">-- name article-test</code></strong>: Nome que você vai dar para a Box</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">article_test.box</code></strong>: Nome que foi dado para o arquivo .Box</li>
+</ul>
 
 <p>Pronto! Você tem uma infra como código agora…</p>
 
@@ -1845,6 +1863,13 @@ end
         
         
         <li class="text-truncate lh-lg">
+          <a href="/posts/basic-start-vagrant/">Vagrant Descomplicado: Um Guia Prático</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/posts/git-basic/">O Básico para Iniciar no Git</a>
         </li>
       
@@ -1860,13 +1885,6 @@ end
         
         <li class="text-truncate lh-lg">
           <a href="/posts/first-post/">Como Criar um Blog Como Esse</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/posts/basic-start-vagrant/">Vagrant Descomplicado: Um Guia Prático</a>
         </li>
       
     </ul>
