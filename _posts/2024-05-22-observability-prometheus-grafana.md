@@ -145,3 +145,12 @@ docker ps
 
 6. Seu Dashboard estará disponível e configurado.
     - ![dashboard](/assets/images/observability-prometheus-grafana/dashboard-grafana.png)
+
+---
+
+<center>
+
+*Obrigado por ler até aqui!*
+
+[*Fazendo o que precisa ser feito.*](https://linktr.ee/lorenzo_uriel)
+</center>

@@ -69,3 +69,12 @@ Depois é só fazer o deploy e acessar.
 - [Instalação](https://jekyllrb.com/docs/installation/windows/)
 - [Dicas de Customização](https://chirpy.cotes.page/posts/customize-the-favicon/)
 - [Mais Sobre o Jenkyll](https://jekyllrb.com/)
+
+---
+
+<center>
+
+*Obrigado por ler até aqui!*
+
+[*Fazendo o que precisa ser feito.*](https://linktr.ee/lorenzo_uriel)
+</center>
