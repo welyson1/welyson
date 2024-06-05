@@ -72,9 +72,6 @@ Depois é só fazer o deploy e acessar.
 
 ---
 
-<center>
-
 *Obrigado por ler até aqui!*
 
 [*Fazendo o que precisa ser feito.*](https://linktr.ee/lorenzo_uriel)
-</center>

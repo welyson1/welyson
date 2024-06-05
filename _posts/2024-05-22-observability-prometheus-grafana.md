@@ -148,9 +148,8 @@ docker ps
 
 ---
 
-<center>
+---
 
 *Obrigado por ler até aqui!*
 
 [*Fazendo o que precisa ser feito.*](https://linktr.ee/lorenzo_uriel)
-</center>

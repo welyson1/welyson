@@ -330,9 +330,6 @@ Se te interessou, pesquise mais sobre o assunto, o Vagrant tem muito mais a ofer
 
 ---
 
-<center>
-
 *Obrigado por ler até aqui!*
 
 [*Fazendo o que precisa ser feito.*](https://linktr.ee/lorenzo_uriel)
-</center>
