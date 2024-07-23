@@ -16,7 +16,7 @@ Você utilizar ele de diversas maneiras:
 
 ## Arquitetura Prometheus
 Um outro ponto importante é que o Prometheus faz o pull das métricas, diferente de outras aplicações de monitoria, realizando esse pull, deixa o processo mais leve e menos danoso para o servidor/ambiente monitorado.
-- ![architecture](/assets/images/observability-prometheus-grafana/architecture_prometheus.png)
+- ![architecture](/assets/images/2024-05-22-observability-prometheus-grafana/architecture_prometheus.png)
 
 **Alguns aspectos importantes são:**
 - **Targets:** Qualquer ambiente que podemos recolher as métricas, como: linux server, http server, databases, containers, microserviços e qualquer ambiente.
@@ -27,7 +27,7 @@ O **Retrieval** é o agente que envia essas métricas, ele recolhe essas informa
 - **Alguns serviços já possuem esse `/metrics` expostos.**
 
 ### Arquitetura Prometheus Simplificada
-- ![architecture_prometheus](/assets/images/observability-prometheus-grafana/architecture_prometheus_grafana.png)
+- ![architecture_prometheus](/assets/images/2024-05-22-observability-prometheus-grafana/architecture_prometheus_grafana.png)
 - **Fonte:** https://michelleamesquita.medium.com/monitoramento-com-grafana-prometheus-fc2227e67433
 
 O nosso Prometheus utiliza o retrieval para realizar o pull das métricas de nossos ambientes e adiciona essas métricas em um Storage (Time Series Database). Com o Grafana nós conseguimos consultar essas métricas e criar dashboards personalizados de monitoria e observabilidade.
@@ -50,7 +50,7 @@ Existem vários dashboards já pré-configurados que foram disponibilizados pela
 
 # Subindo um Serviço de Observabilidade e Monitoria com Prometheus e Grafana
 
-Eu adicionei todos os arquivos que utilizei em um [repositório](https://github.com/lorenzouriel/observability-prometheus-grafana) no meu GitHub. Você pode clonar e iniciar com os comandos abaixo.
+Eu adicionei todos os arquivos que utilizei em um [repositório](https://github.com/lorenzouriel/2024-05-22-observability-prometheus-grafana) no meu GitHub. Você pode clonar e iniciar com os comandos abaixo.
 
 ## Resumo dos Arquivos:
 - **Vagrantfile**: Configuração para criar e provisionar a VM com Vagrant.
@@ -144,7 +144,7 @@ docker ps
     - Clique em **Import**.
 
 6. Seu Dashboard estará disponível e configurado.
-    - ![dashboard](/assets/images/observability-prometheus-grafana/dashboard-grafana.png)
+    - ![dashboard](/assets/images/2024-05-22-observability-prometheus-grafana/dashboard-grafana.png)
 
 ---
 
