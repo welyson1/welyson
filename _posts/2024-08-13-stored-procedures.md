@@ -1,6 +1,6 @@
 ---
 title: "Stored Procedures"
-date: 2024-08-14 00:00:00:0000
+date: 2024-08-13 00:00:00:0000
 categories: [sql]
 tags: [sql]
 ---
@@ -60,7 +60,7 @@ EXEC inserir_produto 'Product F', 'Essa é a descrição do Produto F', '2023-05
 ```
 
 Se consultarmos a tabela `produtos` vamos ver o `Product F` adicionado:
-- ![insert](/assets/images/2024-08-14-stored-procedures/insert.png)
+- ![insert](/assets/images/2024-08-13-stored-procedures/insert.png)
 
 Você pode melhorar e utilizar a sua procedure de várias maneiras como:
 - Colocar um validador de data;
@@ -93,7 +93,7 @@ EXEC vendas_por_produto 2
 - *2 é product_id que enviamos para a consulta como um parâmetro.*
 
 **Resultado:**
-- ![select](/assets/images/2024-08-14-stored-procedures/select.png)
+- ![select](/assets/images/2024-08-13-stored-procedures/select.png)
 
 Você deve estar se perguntando: *"Qual eu uso agora? Views, Funções ou Procedures?"*
 
