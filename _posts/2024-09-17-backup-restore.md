@@ -118,7 +118,7 @@ WITH INIT;
 3. Backup diferencial às 3h (captura todas as alterações desde 1h).
 4. Backup do log de transações às 4h (captura alterações das 2h às 4h).
 
-![types-backups](/assets/images/2024-09-18-backup-restore/types-backups.webp)
+![types-backups](/assets/images/2024-09-17-backup-restore/types-backups.webp)
 
 
 ***Pontos Chaves:***
