@@ -5,8 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Documentando o seu Database
-
 Documentar um banco de dados costuma ser uma tarefa cansativa e repetitiva.
 
 Quem já documentou, sabe. E quando muda algo no Schema, lá vamos nós atualizar a documentação ou o dicionário.

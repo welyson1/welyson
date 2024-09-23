@@ -5,8 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Álgebra Relacional e SQL
-
 **O que é álgebra relacional?**
 A álgebra relacional é uma forma teórica de manipular dados em um banco de dados relacional. Não houve muita atenção a esse assunto até a publicação do modelo relacional por Edgar F. Codd, **na publicação do modelo relacional, Edgar propõe que a álgebra seja usada como base para linguagens de consulta de banco de dados.**
 

@@ -5,7 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Bitmasking & Bitwise
 **Bitmasking** e **Bitwise** são conceitos utilizados principalmente na programação para manipular e representar dados e objetos em nível de bits, permitindo operações eficientes.
 
 **Bitmasking** refere-se ao processo de usar uma máscara de bits para manipular ou verificar o valor de bits específicos em um número binário. 

@@ -5,7 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Normalização
 Consiste em técnicas usadas para evitar inconsistência e redundância de dados por meio da estruturação do banco de dados. É um conjunto de regras e técnicas que ajudam a projetar e organizar a estrutura de um banco de dados relacional de forma eficiente.
 - **Inconsistência:** A normalização ajuda a manter a consistência dos dados, pois as alterações em uma tabela são automaticamente refletidas em outras tabelas relacionadas. Isso evita problemas de inconsistência e garante a **integridade referencial.**
 - **Redundância:** Evita a repetição desnecessária de dados em diferentes partes do banco de dados, o que economiza espaço de armazenamento e reduz a probabilidade de inconsistências.

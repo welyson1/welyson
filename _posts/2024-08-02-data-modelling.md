@@ -5,7 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Modelagem de Dados
 Quem me conhece sabe que eu gosto de desenhar e seguir processos, acredito que esse é o Core para resolver qualquer problema.
 
 Ter uma boa documentação e um processo bem definido, vai te deixar mais confiante para aplicar e criar algo.

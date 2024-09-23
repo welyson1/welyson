@@ -5,7 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Stored Procedures
 Procedimentos armazenados (Stored Procedures) é a tradução desse conceito. **São conjuntos de instruções SQL que são armazenados no seu banco de dados e que podem ser executados com frequência.**
 
 Em um Stored Procedure, você pode encapsular regras de inserção (`INSERT`), regras de atualização (`UPDATE`), regras de deleção (`DELETE`) e diversos outros conceitos. No caso do `SELECT`, ela é muito utilizada com parâmetros, você pode definir parâmetros na consulta de entrada e saída na consulta.

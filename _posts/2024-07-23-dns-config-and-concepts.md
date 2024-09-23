@@ -5,7 +5,6 @@ categories: [Redes]
 tags: [redes]
 ---
 
-# Configuração DNS & Conceitos
 Você não precisa saber tudo sobre redes...
 
 Porém, existem alguns conceitos que são obrigatórios na área de tech e que um dia vão puxar o seu pé a noite.

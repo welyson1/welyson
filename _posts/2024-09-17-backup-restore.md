@@ -5,7 +5,6 @@ categories: [sql]
 tags: [sql]
 ---
 
-# Backup & Restore
 A política que deve ser discutida no trabalho é a de Backup e Restore.
 
 É o tipo de conversa difícil que precisa acontecer. Pode parecer que não é uma prioridade, mas quando a bomba explodir…

@@ -1,11 +1,9 @@
 ---
-title: "How to Create Your Backup & Restore Policy"
+title: "Como Criar sua Política de Backup e Restore"
 date: 2024-09-22 00:00:00:0000
 categories: [sql]
 tags: [sql]
 ---
-
-# Como Criar sua Política de Backup e Restore
 
 Atualmente, não ter uma política de rotina de backup é como dar um tiro no próprio pé. Uma política de backup não é apenas uma precaução: é uma necessidade estratégica para proteger o seu negócio. Aqui estão os principais motivos pelos quais toda organização deve implementar um:
 
