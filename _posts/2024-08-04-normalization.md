@@ -1,7 +1,7 @@
 ---
 title: "Normalização"
 date: 2024-08-04 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

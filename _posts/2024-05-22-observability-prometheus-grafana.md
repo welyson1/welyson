@@ -2,7 +2,7 @@
 title: "Monitoria e Observabilidade com Prometheus e Grafana"
 date: 2024-05-22 00:00:00:0000
 categories: [Observability]
-tags: [observability, IaC]
+tags: [observability, iac]
 ---
 
 # Prometheus

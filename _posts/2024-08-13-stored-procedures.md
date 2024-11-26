@@ -1,7 +1,7 @@
 ---
 title: "Stored Procedures"
 date: 2024-08-13 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

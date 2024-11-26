@@ -1,7 +1,7 @@
 ---
 title: "Álgebra Relacional e SQL"
 date: 2024-08-05 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

@@ -2,7 +2,7 @@
 title: "Vagrant Descomplicado: Um Guia Prático"
 date: 2024-05-20 00:00:00:0000
 categories: [IaC]
-tags: [IaC]
+tags: [iac]
 ---
 
 A minha ideia é te ensinar a usar as principais funcionalidades do Vagrant em apenas um artigo, de forma simplificada e rápida. Você vai aprender o que é, para que serve, quais as suas funcionalidades e vai subir uma VM comigo no decorrer do artigo!

@@ -1,7 +1,7 @@
 ---
 title: "Como Criar sua Política de Backup e Restore"
 date: 2024-09-22 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

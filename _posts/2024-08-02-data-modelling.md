@@ -1,7 +1,7 @@
 ---
 title: "Modelagem de Dados"
 date: 2024-08-02 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

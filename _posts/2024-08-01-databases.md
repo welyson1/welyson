@@ -1,7 +1,7 @@
 ---
 title: "Bancos de Dados, SQL e T-SQL"
 date: 2024-08-01 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

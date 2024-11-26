@@ -1,7 +1,7 @@
 ---
 title: "Iniciando um Projeto Python"
 date: 2024-11-20 00:00:00:0000
-categories: [python]
+categories: [Python]
 tags: [python]
 ---
 

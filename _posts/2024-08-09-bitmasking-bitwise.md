@@ -1,7 +1,7 @@
 ---
 title: "Bitmasking & Bitwise"
 date: 2024-08-09 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Documentando o seu Database"
 date: 2024-08-08 00:00:00:0000
-categories: [sql]
+categories: [SQL]
 tags: [sql]
 ---
 
