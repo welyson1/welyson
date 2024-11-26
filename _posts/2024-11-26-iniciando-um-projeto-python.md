@@ -82,7 +82,7 @@ Isso garante que seu projeto usará a versão especificada do Python, independen
 ## 4. Use o Poetry
 Poetry é um gerenciador de dependências e uma ferramenta para construção e inicialização de projetos Python.
 
-Ele simplifica o gerenciamento o empacotamento de dependências, facilitando a manutenção e o compartilhamento de projetos Python.
+Ele simplifica o gerenciamento o empacotamento de dependências, facilitando a manutenção e o compartilhamento.
 
 ### Passos:
 
@@ -108,9 +108,8 @@ poetry shell  # Crie e acesse o virtual env
 poetry env use 3.12.0  # Setar a sua versão do Python
 ```
 
-O ponto principal é a resolução de dependências de forma limpa e eficiente.
-
 Aqui está um exemplo do arquivo `pyproject.toml` com a lib `requests` adicionada:
+
 ```bash
 [tool.poetry]
 name = "python-requests-site"
@@ -152,7 +151,7 @@ touch .gitignore
 touch .env
 ```
 
-Este é um ótimo ponto de partida para criar um projeto Python do zero, eu documentei a maneira que semprw faço. 
+Este é um ótimo ponto de partida para criar um projeto Python do zero, eu documentei exatamente a maneira que sempre faço. 
 
 Existem várias outras abordagens que você pode adotar para garantir que o projeto seja mantido de acordo com as melhores práticas, pretendo me aprofundar no próximo artigo dessa série.
 
